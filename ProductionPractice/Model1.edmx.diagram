@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d738f52385be4f70b98458b058b9fb46" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="ProductionPracticeModel.Car" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProductionPracticeModel.Color" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProductionPracticeModel.Driver" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProductionPracticeModel.Engine" Width="1.5" PointX="0.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProductionPracticeModel.HystoryStatu" Width="1.5" PointX="8.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProductionPracticeModel.Licence" Width="1.5" PointX="6" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProductionPracticeModel.RegionCode" Width="1.5" PointX="2.75" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProductionPracticeModel.StatusLicence" Width="1.5" PointX="3.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProductionPracticeModel.sysdiagram" Width="1.5" PointX="4.75" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProductionPracticeModel.User" Width="1.5" PointX="5.75" PointY="2.125" IsExpanded="true" />
+        <AssociationConnector Association="ProductionPracticeModel.FK_Car_Color" ManuallyRouted="false" />
+        <AssociationConnector Association="ProductionPracticeModel.FK_Car_Driver" ManuallyRouted="false" />
+        <AssociationConnector Association="ProductionPracticeModel.FK_Car_Engine" ManuallyRouted="false" />
+        <AssociationConnector Association="ProductionPracticeModel.FK_Licence_Driver" ManuallyRouted="false" />
+        <AssociationConnector Association="ProductionPracticeModel.FK_HystoryStatus_Licence" ManuallyRouted="false" />
+        <AssociationConnector Association="ProductionPracticeModel.FK_HystoryStatus_StatusLicence" ManuallyRouted="false" />
+        <AssociationConnector Association="ProductionPracticeModel.FK_Licence_StatusLicence" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ProductionPracticeModel.City" Width="1.5" PointX="8.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

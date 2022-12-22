@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProductionPracticeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Car">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Manufacturer" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Model" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="Weight" Type="int" Nullable="false" />
+    <Property Name="DriveType" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IdColor" Type="int" Nullable="false" />
+    <Property Name="IdEngine" Type="int" Nullable="false" />
+    <Property Name="IdDriver" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="City" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Region" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Color">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="ColorCode" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ColorName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsMetallic" Type="int" Nullable="false" />
+    <Property Name="NameEng" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ColorNameEng" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Driver">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MiddleName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PassportSerial" Type="int" Nullable="false" />
+    <Property Name="PassportNumber" Type="int" Nullable="false" />
+    <Property Name="PostCode" Type="int" Nullable="false" />
+    <Property Name="City" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address" Type="nvarchar(max)" />
+    <Property Name="CityLife" Type="nvarchar" MaxLength="50" />
+    <Property Name="AddressLife" Type="nvarchar(max)" />
+    <Property Name="Company" Type="nvarchar" MaxLength="50" />
+    <Property Name="JobName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Email" Type="nvarchar(max)" />
+    <Property Name="Image" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Engine">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Type" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="HystoryStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="IdLicence" Type="int" Nullable="false" />
+    <Property Name="IdStatusLicence" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Licence">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LicenceDate" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ExpireDate" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Categories" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LicenceSeries" Type="int" Nullable="false" />
+    <Property Name="LicenceNumber" Type="int" Nullable="false" />
+    <Property Name="IdDriver" Type="int" Nullable="false" />
+    <Property Name="IdStatus" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RegionCode">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameEng" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="NameRu" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SubjectCode" Type="int" />
+    <Property Name="Code" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="OkatoCode" Type="int" />
+    <Property Name="Gost" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="StatusLicence">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Type" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Login" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Car_Color">
+    <End Role="Color" Type="Self.Color" Multiplicity="1" />
+    <End Role="Car" Type="Self.Car" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Color">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Car">
+        <PropertyRef Name="IdColor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Car_Driver">
+    <End Role="Driver" Type="Self.Driver" Multiplicity="1" />
+    <End Role="Car" Type="Self.Car" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Driver">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Car">
+        <PropertyRef Name="IdDriver" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Car_Engine">
+    <End Role="Engine" Type="Self.Engine" Multiplicity="1" />
+    <End Role="Car" Type="Self.Car" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Engine">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Car">
+        <PropertyRef Name="IdEngine" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HystoryStatus_Licence">
+    <End Role="Licence" Type="Self.Licence" Multiplicity="1" />
+    <End Role="HystoryStatus" Type="Self.HystoryStatus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Licence">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HystoryStatus">
+        <PropertyRef Name="IdLicence" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HystoryStatus_StatusLicence">
+    <End Role="StatusLicence" Type="Self.StatusLicence" Multiplicity="1" />
+    <End Role="HystoryStatus" Type="Self.HystoryStatus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StatusLicence">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HystoryStatus">
+        <PropertyRef Name="IdStatusLicence" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Licence_Driver">
+    <End Role="Driver" Type="Self.Driver" Multiplicity="1" />
+    <End Role="Licence" Type="Self.Licence" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Driver">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Licence">
+        <PropertyRef Name="IdDriver" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Licence_StatusLicence">
+    <End Role="StatusLicence" Type="Self.StatusLicence" Multiplicity="1" />
+    <End Role="Licence" Type="Self.Licence" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StatusLicence">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Licence">
+        <PropertyRef Name="IdStatus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="ProductionPracticeModelStoreContainer">
+    <EntitySet Name="Car" EntityType="Self.Car" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="City" EntityType="Self.City" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Color" EntityType="Self.Color" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Driver" EntityType="Self.Driver" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Engine" EntityType="Self.Engine" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HystoryStatus" EntityType="Self.HystoryStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Licence" EntityType="Self.Licence" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RegionCode" EntityType="Self.RegionCode" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StatusLicence" EntityType="Self.StatusLicence" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Car_Color" Association="Self.FK_Car_Color">
+      <End Role="Color" EntitySet="Color" />
+      <End Role="Car" EntitySet="Car" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Car_Driver" Association="Self.FK_Car_Driver">
+      <End Role="Driver" EntitySet="Driver" />
+      <End Role="Car" EntitySet="Car" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Car_Engine" Association="Self.FK_Car_Engine">
+      <End Role="Engine" EntitySet="Engine" />
+      <End Role="Car" EntitySet="Car" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HystoryStatus_Licence" Association="Self.FK_HystoryStatus_Licence">
+      <End Role="Licence" EntitySet="Licence" />
+      <End Role="HystoryStatus" EntitySet="HystoryStatus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HystoryStatus_StatusLicence" Association="Self.FK_HystoryStatus_StatusLicence">
+      <End Role="StatusLicence" EntitySet="StatusLicence" />
+      <End Role="HystoryStatus" EntitySet="HystoryStatus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Licence_Driver" Association="Self.FK_Licence_Driver">
+      <End Role="Driver" EntitySet="Driver" />
+      <End Role="Licence" EntitySet="Licence" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Licence_StatusLicence" Association="Self.FK_Licence_StatusLicence">
+      <End Role="StatusLicence" EntitySet="StatusLicence" />
+      <End Role="Licence" EntitySet="Licence" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

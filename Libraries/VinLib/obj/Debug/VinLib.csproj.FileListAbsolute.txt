@@ -1,0 +1,6 @@
+C:\Users\vasil\Desktop\Папка Максима\Домашняя работа 4 курс\Производственная практика 4 курс Осень\ProductionPractice\Libraries\VinLib\bin\Debug\VinLib.dll
+C:\Users\vasil\Desktop\Папка Максима\Домашняя работа 4 курс\Производственная практика 4 курс Осень\ProductionPractice\Libraries\VinLib\bin\Debug\VinLib.pdb
+C:\Users\vasil\Desktop\Папка Максима\Домашняя работа 4 курс\Производственная практика 4 курс Осень\ProductionPractice\Libraries\VinLib\obj\Debug\VinLib.csproj.AssemblyReference.cache
+C:\Users\vasil\Desktop\Папка Максима\Домашняя работа 4 курс\Производственная практика 4 курс Осень\ProductionPractice\Libraries\VinLib\obj\Debug\VinLib.csproj.CoreCompileInputs.cache
+C:\Users\vasil\Desktop\Папка Максима\Домашняя работа 4 курс\Производственная практика 4 курс Осень\ProductionPractice\Libraries\VinLib\obj\Debug\VinLib.dll
+C:\Users\vasil\Desktop\Папка Максима\Домашняя работа 4 курс\Производственная практика 4 курс Осень\ProductionPractice\Libraries\VinLib\obj\Debug\VinLib.pdb

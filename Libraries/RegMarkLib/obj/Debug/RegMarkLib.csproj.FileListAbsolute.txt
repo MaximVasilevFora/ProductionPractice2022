@@ -1,0 +1,6 @@
+C:\Users\vasil\Desktop\Папка Максима\Домашняя работа 4 курс\Производственная практика 4 курс Осень\ProductionPractice\Libraries\RegMarkLib\bin\Debug\RegMarkLib.dll
+C:\Users\vasil\Desktop\Папка Максима\Домашняя работа 4 курс\Производственная практика 4 курс Осень\ProductionPractice\Libraries\RegMarkLib\bin\Debug\RegMarkLib.pdb
+C:\Users\vasil\Desktop\Папка Максима\Домашняя работа 4 курс\Производственная практика 4 курс Осень\ProductionPractice\Libraries\RegMarkLib\obj\Debug\RegMarkLib.csproj.AssemblyReference.cache
+C:\Users\vasil\Desktop\Папка Максима\Домашняя работа 4 курс\Производственная практика 4 курс Осень\ProductionPractice\Libraries\RegMarkLib\obj\Debug\RegMarkLib.csproj.CoreCompileInputs.cache
+C:\Users\vasil\Desktop\Папка Максима\Домашняя работа 4 курс\Производственная практика 4 курс Осень\ProductionPractice\Libraries\RegMarkLib\obj\Debug\RegMarkLib.dll
+C:\Users\vasil\Desktop\Папка Максима\Домашняя работа 4 курс\Производственная практика 4 курс Осень\ProductionPractice\Libraries\RegMarkLib\obj\Debug\RegMarkLib.pdb

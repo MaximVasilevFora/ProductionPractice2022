@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "m3dUYxmJGJG0fPeU6WHGLU4v3HRUMeEr6/ihnWw0B64eBhkilX9q19aP3aqson8ocSahbgLh7JxxaPVIZMAN7Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vasil\\Desktop\\Папка Максима\\Домашняя работа 4 курс\\Производственная практика 4 курс Осень\\ProductionPractice\\ProductionPractice\\ProductionPractice.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vasil\\.nuget\\packages\\entityframework\\6.2.0\\entityframework.6.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}
